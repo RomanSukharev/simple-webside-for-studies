@@ -1,0 +1,150 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Продукты питания</title>
+</head>
+<style>
+	body {
+		overflow-x: hidden;
+	}
+
+	.A {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		background-color: #5EB8DA;
+	}
+
+	.A1 {
+		margin: 10px;
+		font-size: 20px;
+		font-style: normal;
+		vertical-align: baseline;
+
+	}
+
+	a {
+		text-decoration: none;
+		color: #030B66;
+	}
+
+	a:visited {
+		color: #030B66;
+
+	}
+
+	table {
+		border-collapse: collapse;
+		line-height: 1.1;
+		font-family: serif;
+		background: radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
+		color: #0C213B;
+	}
+
+	th {
+		padding: 10px;
+		border: 1px solid #FFFFFF;
+		text-align: center;
+	}
+
+	td {
+		background: #D2D2D2;
+		padding: 10px;
+		border: 1px solid #FFFFFF;
+		text-align: center;
+	}
+
+	p1 {
+		align-content: center;
+		margin-left: 80px;
+		margin-right: 80px;
+		font-style: italic;
+		text-indent: 20px;
+	}
+
+	p2 {
+		align-content: center;
+		margin-left: 100px;
+		margin-right: 100px;
+		font-style: italic;
+		text-indent: 10px;
+		word-spacing: 3px;
+		letter-spacing: normal;
+	}
+
+	p {
+		line-height: 1;
+		text-transform: none;
+	}
+</style>
+
+<script>
+	function img(n, action) {
+		if (action) { document.images[n - 1].src = "c" + n + ".png" }
+		else { document.images[n - 1].src = n + ".png" }
+	}
+</script>
+
+<body bgcolor="#000000">
+	<div class="A">
+		<div class="A1"> | <img width="40" height="40" src="1.png"><a href="1.html" onmouseover="img(1,1)"
+				onmouseout="img(1,0)">Главная страница |</a></div>
+		<div class="A1"> | <img width="40" height="40" src="2.png"><a href="2.html" onmouseover="img(2,1)"
+				onmouseout="img(2,0)">Продукты питания |</a></div>
+		<div class="A1"> | <img width="40" height="40" src="3.png"><a href="3.html" onmouseover="img(3,1)"
+				onmouseout="img(3,0)">Интерактивные функции |</a></div>
+				<div class="A1"> | <img width="40" height="40" src="4.png"><a href="4.html" onmouseover="img(4,1)"
+					onmouseout="img(4,0)">Работа с пользователем |</a></div>
+		
+	</div>
+
+	<form>
+		<p align="center">
+		<p align="center">
+			<font color="#FFFFFF" size="+3" face="serif">
+				_____________________________________________________________________________ <br>
+			</font>
+		</p>
+	
+		<p2 align="center">
+			<font color="#1EB4D8" size="+2" face="serif">
+				Пищевые продукты — продукты в натуральном или переработанном виде, употребляемые человеком в пищу</font>
+			<font color="#FFFFFF" size="+2" face="serif"> —  бутилированная питьевая вода, алкогольные и
+				безалкогольные напитки, жевательная резинка, </font>
+		</p2>
+		<p1 align="center">
+			<font color="#FFFFFF" size="+2" face="serif"> а также продовольственное сырьё, пищевые добавки и биологически
+				активные добавки. </font>
+		</p1>
+	
+
+		<p align="center">
+			<font color="#FFFFFF" size="+3" face="serif">
+				_____________________________________________________________________________ <br>
+			</font>
+		</p>
+
+		<p align="center">
+			<font color="#FFFFFF" size="+3" face="serif">Классификация продуктов:</font>
+		</p>
+	</form>
+	<p align="center"><img src="shema.jpg" width="900" height="600" alt="name" align="center"></p>
+
+	<p align="center">
+		<font color="#FFFFFF" size="+3" face="serif">
+			_____________________________________________________________________________ <br>
+		</font>
+	</p>
+	<p align="center">
+		<font color="#FFFFFF" size="+3" face="serif">Так же есть люди, которые не едят мясо</font>
+	</p>
+	<p align="center"><img src="machinelearning.jpg" width="850" height="450" alt="name" align="center"></p>
+	<p align="center">
+		<font color="#FFFFFF" size="+3" face="serif">
+			_____________________________________________________________________________ <br>
+		</font>
+	</p>
+</body>
+
+</html>

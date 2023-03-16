@@ -1,0 +1,125 @@
+<html>
+<script>
+function Volume(A, B, C) {
+        return A * B * C;
+}
+
+function Side(A, B) {
+        return A * B;
+}
+
+function Square(a) 
+{
+        return (a * a * Math.sqrt(3)) / 4.0;
+}
+
+function timeOfFly(H) {
+        return  Math.sqrt((2.0 * H) / 9.81);
+}
+
+function square(radius) {
+    return radius * Math.PI;
+}
+
+function distanceBetweenTwoPoints(left, right)
+{
+    x = right.x - left.x;
+    y = right.y - left.y;
+
+    return Math.sqrt(x * x + y * y);
+}
+
+function squareByPoints(point1, point2, point3) {
+    fs = distanceBetweenTwoPoints(point1, point2);
+    ss = distanceBetweenTwoPoints(point2, point3);
+    ts = distanceBetweenTwoPoints(point3, point1);
+
+    alert("Fs: " + fs);
+    alert("Ss: " + ss);
+    alert("Ts: " + ts);
+
+    let p = (fs + ss + ts) / 2.0;
+
+    alert("P: " + p);
+
+    let F = p * (p - fs) * (p - ss) * (p - ts);
+
+    return Math.sqrt(F);
+}
+
+function distanceToPoint(point) {
+    return Math.sqrt(point.x * point.x + point.y * point.y);
+}
+
+
+function hipotinusa(catet1, catet2) {
+    return Math.sqrt(catet1 * catet1 + catet2 * catet2);
+}
+
+// 1 задание
+
+let p = square(5);
+alert("Square: " + p)
+
+// 2 задание
+
+let hp = hipotinusa(3, 4);
+alert("Hipotinusa: " + hp)
+
+// 3 задание
+
+let s = squareByPoints({x: 0, y: 0}, {x: 0, y: 5}, {x: 5, y: 0});
+alert("Square by points: " + s)
+
+// 4 задание
+
+let distance = distanceToPoint({x: 5.0, y: 5.0});
+alert("Distance: " + distance);
+
+// 5 задание
+
+let left  = Number(prompt("Enter first var"));
+let right = Number(prompt("Enter second var"));
+
+[left, right] = [right, left];
+
+alert("left: " + left + "\nright: " + right);
+
+// 6 задание
+V = Volume(5, 3, 2);
+S = Side(5, 3);
+
+alert("V: " + V + "\nSide: " + S);
+
+// 7 задание
+N = Number(prompt("Enter N: "));
+K = Number(prompt("Enter K: "));
+
+N *= 300;
+K *= 110;
+Cost = N + K;
+
+alert("Cost: " + Cost);
+
+
+// 8 задание
+N = Number(prompt("Enter N: "));
+M = Number(prompt("Enter M: "));
+
+AverageArithm = (N + M) / 2.0;
+AverageGeomet = Math.sqrt((N + M)).toFixed(2);
+
+alert("Average Arithmetic: " + AverageArithm + "\nAverage Geomet: " + AverageGeomet);
+
+// 9 задание
+a = prompt("Enter side of triangle: " );
+S = Square(a).toFixed(2);
+alert("S: " + S);
+
+// 10 задание
+H = prompt("Enter hight: ");
+t = timeOfFly(H);
+alert("Time of fall: " + t);
+
+</script>
+</html>

@@ -1,0 +1,220 @@
+/* @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed'); */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;   
+}
+
+body{
+  height: 100%;
+}
+
+
+/* header */
+
+header{
+  margin-bottom: 1%;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: rgb(99, 68, 68);
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #70655e;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #796b62;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+
+
+
+/* content */
+
+h1{
+  text-align: center;
+}
+
+.main{
+  margin: 1% 5%;
+}
+
+.title{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 26px;
+}
+
+.img{
+  text-align: center;
+}
+
+img{
+  margin: 2%;
+  width: 60%;
+  height: auto;
+}
+
+.gyper-link{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.inner{
+  margin: 10px;
+  text-align: center;
+}
+
+.outer, .inner{
+  width: 100%;
+}
+
+table, th, td{
+  margin: auto;
+  border: 1px solid black;
+}
+
+.inner table caption{
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.inner table tr th{
+  width: 180px;
+}
+
+.name-article{
+  width:fit-content;
+}
+
+.article{
+  text-indent: 20px;
+  font-size: 19px;
+}
+
+p{
+  margin-bottom: 5px;
+}
+
+h2{
+  margin-top: 20px;
+}
+
+/* --- DOM --- */
+.dom-main{
+  position: relative ;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 200vh;
+  width: 100%;
+}
+
+.txt{
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+  height: 200vh;
+}
+
+.txt .title{
+  width: 100%;
+}
+.sidenav {
+  vertical-align: top;
+  display: inline-block;
+  height: 200vh;
+  /* width: 100px;  */
+  /* position: fixed; */
+  /* z-index: 1;
+  top: 0;
+  left: 0; */
+  background-color: #111;
+  /* overflow-x: hidden;
+  padding-top: 20px; */
+}
+
+
+
+.sidenav a {
+  padding: 8px 30px 6px 16px;
+  text-decoration: none;
+  /* font-size: 25px; */
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+#img-stu img{
+  width: 3000px;
+}
+
+#img-fam img{
+  width: 300px;
+}
+
+#img-fra img{
+  width: 180px;
+}
+
+#img-ho img{
+  width: 250px;
+}
+
+#img-pet img{
+  width: 1500px;
+}

@@ -1,0 +1,54 @@
+<HTML>
+ <HEAD>
+ <TITLE>Простое вертикальное меню</TITLE>
+<style type="text/css">
+.leftArrow:before,
+.leftArrow:after {
+	top:50%;
+	left:-25px;
+	margin-top:-25px;
+	clip:rect(0px, 25px, 50px, 0px);
+}
+.leftArrow:before {
+	-moz-text-shadow:	-4px 0px 6px #666;
+	-webkit-text-shadow:-4px 0px 6px #666;
+	text-shadow:		-4px 0px 6px #666;
+}
+.leftArrow:after {
+	left:-24px;
+}
+</style>
+ <script language="JavaScript">
+ function img(n, action)
+ {if (action)
+ {
+document.images[n-1].src=n  + "_over.png";
+document.images[n-1].width = 300;
+document.images[n-1].height = 150;
+ }
+ else
+ {
+document.images[n-1].src=n + "_out.png";
+document.images[n-1].width = 150;
+document.images[n-1].height = 75;
+ }
+ }
+ </script>
+ </HEAD>
+ <BODY>
+ <H2><FONT соlоr="#0000ff">Содержание</FONT></H2>
+
+ <A href="tch1.htm" onmouseover="img(1,1)" onmouseout="img(1,0)">
+ <IMG src="1.jpg" class="leftArrow" аlt="форматирование текста" border="0"
+width="150" height="75"></A><br>
+
+ <A href="tch2.htm" onmouseover="img(2,1)" onmouseout="img(2,0)">
+ <IMG src="2.png" class="leftArrow" аlt="форматирование текста" border="0"
+width="150" height="75"></A><br>
+
+ <A href="tch3.htm" onmouseover="img(3,1)" onmouseout="img(3,0)">
+ <IMG src="3.png" class="leftArrow" аlt="форматирование текста" border="0"
+width="150" height="75"></A><br>
+
+ </body>
+ </HTML>

@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    /*делает отступ вокруг блока*/
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    /*Кегль всего текста*/
+    line-height: 1.6;
+    /*Расстрояние между строками в тексте*/
+    color: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*делается для того, чтобы заголовки не использовали пространство вокруг себя*/
+    margin: 0;
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+.header {
+    padding-top: 20px;
+    width: 100%;
+    position: absolute;
+    /*делаем для того, чтобы навигация лежала на картинке*/
+    top: 0;
+    /*двигаем вверх/вниз*/
+    left: 0;
+    /*влево/вправо*/
+    right: 0;
+    z-index: 1000;
+    /*используется для того, чтобы у тех элементов, у тогорых index меньше 
+    располагались под тем элементом, у которого он больше*/
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*выравниваем детали по одной оси X*/
+}
+
+/*header_logo*/
+.header_logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+    /*делаем все слова с большими буквами*/
+}
+
+.nav_link {
+    display: inline-block;
+    /*для того, чтобы наши блоки шли в линию*/
+    vertical-align: top;
+    /*нихуя не понял для чего*/
+    margin: 0 15px;
+    /*расстрояние между словами (сначала 0-это высота, а 10px-ширина)*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /*убираем подчеркивание*/
+    transition: color 0.5s linear;
+    position: relative;
+
+
+}
+
+.nav_link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav_link:hover::before {
+    opacity: 1;
+}
+
+.nav_link::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    margin-bottom: 5px;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    
+    position: absolute;
+    top: -10px;
+    transform: translateY(-50%) rotate(135deg);
+    left: 18px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
